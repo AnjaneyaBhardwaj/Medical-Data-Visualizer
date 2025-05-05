@@ -7,7 +7,7 @@ import seaborn as sns
 df = pd.read_csv('medical_examination.csv')
 
 # Add 'overweight' column
-# Add 'overweight' column
+
 df['overweight'] = (df['weight'] / (df['height'] / 100) ** 2 > 25).astype(int)
 
 # Normalize data by making 0 always good and 1 always bad. If the value of 'cholestorol' or 'gluc' is 1,
